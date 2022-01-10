@@ -1,0 +1,42 @@
+CSS 3:
+ctrl D
+shift+alt+ end
+Html css tips
+Css box-shadow property
+-cursor:pointer;
+- display: inline-block; đưa các thẻ có cùng thuộc tính lên trên 1
+hàng
+
+- Căn giữa:
+  1.
+     right:0; left:0;
+     width:100%;
+  2. Căn giữa chiều cao
+     display: flex;
+     agline-items: center;
+
+-text-aglin:justify;
+- alt+ nút tiến lên: chỉnh chữ
+- background-attachment
+- textarea
+- outline: none; click vào text input k hiện border
+- Có float mới dùng được margin âm.
+- opacity: độ mờ
+
+- giao diện model: bật lên. (Phủ lên toàn bộ trang web)
+  +overlay: lớp phủ lên
+  +position:fixed;
+  <input type="text" class="..." placeholder="Enter email">
+  <button id="buy-tickets"> 
+    Pay 
+  </button>
+  <input type="submit">
+ 
+
+
+
+
+
+
+
+

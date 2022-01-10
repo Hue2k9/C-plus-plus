@@ -1,0 +1,15 @@
+Bai4:
+  *Phieu:
+     maPhieu[10]
+     ngay[11]
+     Nguoi nguoi
+     Hang h
+  *Nguoi
+     hoVaTen[50]
+     soDienThoai[11]
+     diaChi[100]
+  *Hang
+     tenHang[50]
+     donGia
+     soLuong
+   

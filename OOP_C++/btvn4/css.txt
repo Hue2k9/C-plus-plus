@@ -1,0 +1,73 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+
+-  box-sizing: border-box;
+  box-sizing với giá trị là border-box 
+cho toàn bộ các phần tử trong website 
+để các phần tử có kích thước chính xác khi bạn khai báo,
+tránh việc cộng thêm các phần border và padding 
+sẽ gây ra rắc rối
+- display: 
+  +block:Xác định thành thành phần hiển thị theo các hàng độc lập
+  +inline: Hiển thị theo chiều ngang, không ngắt dòng khi chiều rộng
+vẫn nhỏ hơn chiều rộng màn hình
+  +inline-block: Các tp hiển thị theo khối nhưng là khối ngang
+- Thẻ span
+  là một thẻ xác định xuống dòng khi độ dài của nó vượt
+  quá chiều rộng được cho phép.
+-Lớp giả:
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+-max-width:100%
+  Co giãn khi html thu nhỏ
+
+- align-items: center
+  Căn chỉnh các item bên trong container theo chiều dọc
+hoặc ngang trục axis. Lấy điểm giữa các items.
+
+-justify-content:
+  +space-between: tạo khoảng cách ở giữa các tp bằng nhau.
+Phần tử đầu luôn nằm sát trái, phần tử cuối luôn nằm sát phải.
+  +space-evenly: Khoảng cách ở giữa 2 vùng kề cận nhau luôn
+bằng nhau.
+  +center: Đẩy các phần tử ra giữa
+  +flex-start: căn các phần tử về bên trái (giống float:left)
+  +flex-end: căn các phần tử về bên phải (giống float:right).
+- position:
+- margin: 0px auto; Dua ra giua
+- min-height: chiều cao mặc định là ... Còn bt không để thì chiều cao
+bằng đúng nội dung nó chứa.
+
+- float: left;
+  clear: left; xóa thuộc tính left của thẻ sau chịu ảnh hưởng
+
+-line-height: chỉnh bằng độ cao box để khoảng cách trên dưới của
+chữ ở giữa
+
+-display:block; màu sẽ được bao quát toàn khối
+-text-indent:15px cho chữ lùi vào đầu dòng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

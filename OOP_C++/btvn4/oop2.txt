@@ -1,0 +1,29 @@
+===Tính kế thừa====
+- Kế thừa là gì?
+  +Sự trao đổi thông tin từ thế hệ này sang thế hệ khác
+  <=> Sự trao đổi thông tin từ lớp A sang lớp B
+- Lớp cha mà có lớp con kế thừa lại thì các thuộc tính của lớp cha
+sẽ để ở tầm vực PROTECTED.
+  + protected: khi ta khai báo các thuộc tính hay phương thức với từ
+khóa này thì nó sẽ có phạm vi hoạt động bên trong lớp đó và ở các lớp
+con kế thừa từ nó.
+=> Kế thừa là chúng ta sẽ đi kiếm những cái gì "CHUNG", sau đó đem những
+cái chung đó ra tạo thành 1 cái class(lớp)- class cha.
+
+- Cú pháp:
+class NhanVienSanXuat : public NhanVien{
+   private:
+      int soSanPham;
+   public:
+      void Input();
+      void Output();
+};
+(Trong đó NhanVien là lớp cha có đặc tính chung)
+
+- Khi 1 lớp con kế thừa từ lớp cha => Thằng cha có cái gì thì thằng
+con có cái đó.
+
+LỢI ÍCH CỦA KẾ THỪA:
+- Tránh tình trạng dư thừa dữ liệu.
+- opacitya: độ mờ.
+- responsive.

@@ -1,0 +1,100 @@
+! + Tab =>website
+============Responsive============
+* Chúng ta sẽ làm gì?
+ 1. Dùng css thay đổi kích thước phù hợp cho các thành phần hiển thị
+trên website (hình ảnh, cỡ chữ, nút bấm,..)
+ 2. Dùng css để ẩn/hiện các thành phần phù hợp theo kích thước màn hình.
+
+*viewport:
+cdnjs.com 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*Thẻ meta:
+* Media query?
+  @media not|only mediatype and (mediafeature and|or|not meadiafeature){
+
+}
+  1. Keywords
+    -not
+    -only
+    -and
+    -or
+  2. Mediatypes:
+    -print
+    -screen: màn hình nói được, dùng cho người khuyết tật
+    -speech
+    -all-default
+  3. Media Features:
+    -min-width
+    -max-width
+    -...
+  4. Polyfill?
+    -Sử dụng thuộc tính media querry cho trình duyệt cũ.
+
+VD:
+ @media screen and (max-width: 1024px){
+    h1{
+        color: red;
+    }
+}
+
+<link rel="stylesheet" media="(min-width:1024px)" href="./abc">
+
+*Breakpoints?
+  -Breakpoints là những điểm/vị trí mà bố cục website sẽ thay đổi- thích
+ứng để tạo nên giao diện responsive.
+  - Mobile: width<740px;
+  - Tablet: width>=740px and width<1024px;
+  -pc: width>=1024px;
+https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
+
+* px, rem or em?
+ => em;
+   1 em=16px;
+  Su dung convert px to em;
+
+- Tràn dòng:
+  Ban đầu:
+   + display: flex;
+   + flex-wrap: wrap;
+  => Sau đó chỉnh độ rộng nó tự động nhảy xuống dòng.
+
+
+- transform: translateX(-100%); trượt từ ngoài vào. translateX(0%);
+- Thẻ label, thẻ svg. Lớp giả checked của input= checkbox.
+- animation: fadeIn linear 0.2s;
+@keyframes fadeIn{
+   from{
+     opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
+
+- transition: transform linear 0.2s;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

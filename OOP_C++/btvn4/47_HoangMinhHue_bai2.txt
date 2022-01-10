@@ -1,0 +1,21 @@
+
+*Phiếu:
+  -private:
+       +Mã phiếu
+       +ngày lập
+       +địa chỉ
+       +Tên NCC
+       +Hàng
+  -public:
+       +Nhap();
+       +Xuat();
+*Hàng:
+  -private:
+       +Tên hàng
+       +Đơn giá
+       +Số lượng
+       +Thành tiền
+       +Tổng
+  -public:
+       +Nhap();
+       +Xuat();

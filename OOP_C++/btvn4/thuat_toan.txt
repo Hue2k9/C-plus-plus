@@ -1,0 +1,4 @@
+// (x,y) va (u,v)
+// => Để 2 tọa độ cùng nằm trên 1 đường chéo
+// =>  x-y=u-v && điều kiện không cùng nằm trên 1 hàng
+    x-u!=0;

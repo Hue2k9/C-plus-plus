@@ -1,0 +1,18 @@
+- Thẳng hàng nhau
+cout<<left<<"Lop: "<<setw(30)<<tenLop<<"Khoa: "<<khoa<<endl;
+- Cách ra 1 khoảng rồi ghi:
+cout<<left<<setw(60)<<""<<"dtb "<<setw(20)<<""<<(float)tongdiem/n;
+
+stdlib.h
+void Insert(Phieu &a, Student x, int pos){
+   a=(int*)realloc(a,(n+1)*sizeof(int));
+    a.students=(Student*)realloc(a.student,(a.n+1)*sizeof(Student));
+   for(int i=a.n; i>=pos-1; i--)
+     a.student[i]=a.student[i-1];
+     a.n++;
+     a.students[pos-1]=x;
+}
+
+Student x;
+x.Nhap();
+Insert(a,x,1);

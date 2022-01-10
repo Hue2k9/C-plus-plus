@@ -1,0 +1,56 @@
+void SapXep(BangKe x){
+	for(int i=0; i<x.n-1; i++){
+		for(int j=i; j<x.n; j++){
+			if (x.cv[i].getThoiGian() > x.cv[j].getThoiGian()){
+				CongViec temp=x.cv[i];
+				x.cv[i]=x.cv[j];
+				x.cv[j]=temp;
+			}
+		}
+	}
+}
+/////////////////
+int operator--()
+{
+   return a+b+c+d;
+}
+=> int ChuVi=--P;
+/////////////////
+friend Bac2 operator + (Bac2& pt1, Bac2& pt2){
+     Bac2 pt;
+     pt.a = pt1.a + pt2.a;
+     pt.b = pt1.b + pt2.b;
+     return pt;
+}
+/////////////////
+friend istream& operator>>(istream& is, TuGiac &y){
+      cout<<"Nhap canh a: ";
+      is>>y.a;
+      return is;
+}
+////////////////		
+friend ostream& operator<<(ostream& os, TuGiac y){
+	os<<"a= "<<y.a<<endl;
+	os<<"b= "<<y.b<<endl;
+	os<<"c= "<<y.c<<endl;
+	os<<"d= "<<y.d<<endl;
+     return os;
+}
+
+/=========Doc ghi file==========/
+//Ghi file:
+     fstream f;
+     f.open("TuGiac.txt",ios::out);
+     f<<"Thong tin tu giac P: "<<endl;
+     f<<P<<endl;
+
+
+
+
+
+
+
+
+
+
+

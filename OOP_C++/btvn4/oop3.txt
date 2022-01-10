@@ -1,0 +1,69 @@
+1. Nạp chồng hàm (Function overloading)
+2. Nạp chồng toán tử (Operator)
+
+- system("pause");
+- & : địa chỉ
+- >> : Nhập dữ liệu từ bàn phím
+- << : xuất dữ liệu
+
+#include<fstream>
+- istream: vao man hinh
+- ostream: ra man hinh
+VD1:
+// Nạp chồng toán tử >> (Để nhập dữ liệu cho 1 sinh viên)
+// is và sv là 2 tham số do người lập trình tự định nghĩa
+
+istream& operator >> (istream& is, SinhVien &sv){
+   // trong hàm chỗ nào có cin sửa thành is
+   return is;
+}
+
+ostream& operator << (ostream& os, SinhVien sv){
+   //Thay cout bằng os;
+
+   return os;
+}
+
+// Nạp chồng toán tử + để cộng 2 phân số.
+PhanSo operator + (PhanSo ps1, PhanSo ps2){
+    PhanSo x;
+    x.tuso=(ps1.tuso*ps2.mauso + ps2.tuso*ps1.mauso);
+    x.mauso=ps1.mauso * sp2.mauso;
+    return x;
+}
+PhanSo x=ps1+ps2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
